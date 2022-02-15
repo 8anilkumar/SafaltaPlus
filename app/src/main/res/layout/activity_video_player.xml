@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true">
+
+
+    <com.safaltaclass.plus.player.LocalExoplayerView
+        android:id="@+id/localExoPlayerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:andexo_full_screen="true"
+        app:andexo_play_when_ready="true"
+        app:andexo_show_controller="true"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/localExoPlayerView"
+        android:layout_margin="10dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="5dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        android:textStyle="normal"
+        android:visibility="gone" />
+
+</RelativeLayout>

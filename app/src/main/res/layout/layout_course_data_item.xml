@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv_course"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardUseCompatPadding="false"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_content_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_margin="2dp">
+
+
+        <ImageView
+            android:id="@+id/iv_course"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:layout_margin="10dp"
+            android:scaleType="fitXY"
+            />
+
+
+        <ImageView
+            android:id="@+id/iv_download"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:scaleType="fitXY"
+            android:padding="10dp"
+            android:src="@drawable/ic_down_arrow"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/iv_delete"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:scaleType="fitXY"
+            android:padding="10dp"
+            android:src="@drawable/ic_delete"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/iv_resume"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/iv_delete"
+            android:scaleType="fitXY"
+            android:padding="10dp"
+            android:src="@drawable/ic_download"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/tv_course"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_alignTop="@id/iv_course"
+            android:layout_marginEnd="5dp"
+            android:layout_toRightOf="@id/iv_course"
+            android:layout_toLeftOf="@+id/iv_download"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="10sp"
+            android:textStyle="bold"
+
+            />
+
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_course"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="5dp"
+            android:layout_toRightOf="@id/iv_course"
+            android:layout_toLeftOf="@+id/iv_download"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text=""
+            android:textColor="@color/gray"
+            android:textSize="9sp" />
+        />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_description"
+            android:layout_marginStart="10dp"
+            android:layout_toRightOf="@+id/iv_course"
+            android:layout_marginTop="3dp"
+            android:ellipsize="end"
+            android:text=""
+            android:textColor="@color/safalata_status_bar_color"
+            android:textSize="9sp"
+            android:textStyle="bold"
+            />
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

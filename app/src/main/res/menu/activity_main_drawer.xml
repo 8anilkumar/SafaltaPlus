@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <!--<item android:id="@+id/nav_lms"
+            android:title="LMS"
+            android:icon="@drawable/ic_menu_lms"/>-->
+        <!--<item android:id="@+id/nav_calendar"
+            android:title="Calendar"
+            android:icon="@drawable/ic_menu_calendar"/>-->
+        <item android:id="@+id/nav_batches"
+            android:icon="@drawable/ic_menu_batches"
+            android:title="Batches" />
+        <item android:id="@+id/nav_centre"
+            android:icon="@drawable/ic_menu_centre"
+            android:title="Centres" />
+        <item android:id="@+id/nav_about_us"
+            android:icon="@drawable/ic_menu_about_us"
+            android:title="Abouts us" />
+        <item android:id="@+id/nav_feedback"
+            android:title="Support"
+            android:icon="@drawable/ic_menu_support"/>
+    </group>
+</menu>

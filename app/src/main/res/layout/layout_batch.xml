@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:id="@+id/cv_batch"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="8dp"
+    android:elevation="8dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:id="@+id/ll_batch_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_textview"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/tv_batch_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:maxLength="20"
+                android:ellipsize="end"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_batch_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/ll_batch_code"
+            android:gravity="end"
+            android:padding="3dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:ellipsize="end"/>
+
+        <View
+
+            android:id="@+id/view_batch_code"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/ll_batch_code"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="-10dp"
+            android:layout_marginEnd="-10dp"
+            android:background="@color/light_grey" />
+
+        <RelativeLayout
+            android:id="@+id/rl_course_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/view_batch_code"
+            >
+
+            <TextView
+                android:id="@+id/tv_course"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:paddingTop="2dp"
+                android:text="Course :"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/tv_course_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv_course"
+                android:layout_marginStart="10dp"
+                android:paddingTop="2dp"
+                android:text="-"
+                android:textColor="@color/green"
+                android:textSize="14sp"
+                android:maxLines="1"
+                android:ellipsize="end" />
+
+        </RelativeLayout>
+
+
+
+
+        <TextView
+            android:id="@+id/tv_subject_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_course_value"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:text=""
+            android:textColor="@color/safalata_status_bar_color"
+            android:textSize="14sp"
+            android:maxLines="4"
+            android:ellipsize="end"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_batch_schedule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_subject_value"
+            android:padding="5dp"
+            android:text=""
+            android:textColor="@color/light_black"
+            android:textSize="14sp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:visibility="gone"/>
+
+        <View
+
+            android:id="@+id/view_batch_schedule"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/tv_batch_schedule"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="-10dp"
+            android:layout_marginEnd="-10dp"
+            android:background="@color/light_grey" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_batch_schedule"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/tv_start"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Start Date"
+                android:textColor="@color/gray"
+                android:textSize="12sp"/>
+
+            <TextView
+
+                android:id="@+id/tv_end"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="End Date"
+                android:textColor="@color/gray"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_mode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Mode"
+                android:textColor="@color/gray"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_date_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_date"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/tv_start_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="2dp"
+                android:gravity="center"
+                android:text="-"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:maxLines="1"
+                android:ellipsize="end"/>
+
+            <TextView
+                android:id="@+id/tv_end_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="2dp"
+                android:gravity="center"
+                android:text="-"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:maxLines="1"
+                android:ellipsize="end"/>
+
+            <TextView
+                android:id="@+id/tv_mode_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="2dp"
+                android:gravity="center"
+                android:text="-"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:maxLines="1"
+                android:ellipsize="end"/>/>
+
+        </LinearLayout>
+
+        <!--   <TextView
+               android:id="@+id/tv_description"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@id/view_batch_code"
+               android:text="Batch Dates and Timings subject to change."
+               android:textColor="@color/light_black"
+               android:textSize="14sp"
+               android:padding="5dp"
+               android:maxLines="2"
+               android:ellipsize="end"/>
+
+           <TextView
+               android:id="@+id/tv_batch_schedule"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@id/tv_description"
+               android:padding="5dp"
+               android:text="Tue @ 12:00-13:30,Thu @ 12:00-13:30,Sat @ 12:00-13:30,"
+               android:textColor="@color/light_black"
+               android:textSize="14sp"
+               android:maxLines="2"
+               android:ellipsize="end"/>
+
+         -->
+
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_course"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="10dp"
+        android:background="@color/safalata_toolbar_color"/>
+</androidx.cardview.widget.CardView>

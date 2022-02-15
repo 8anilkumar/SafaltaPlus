@@ -1,0 +1,81 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+    defaultConfig {
+        applicationId "com.safaltaclass.plus"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 20200320
+        versionName "20200320"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        debug {
+            minifyEnabled false
+            buildConfigField "String", "API_URL", '"https://api.aldine.edu.in/"'
+            buildConfigField "String", "API_KEY", '"W45RTHPLUSSAFALTA2345GTHPLUSTRG8UJN33"'
+
+        }
+
+        release {
+            minifyEnabled true
+            buildConfigField "String", "API_URL", '"https://api.aldine.edu.in/"'
+            buildConfigField "String", "API_KEY", '"W45RTHPLUSSAFALTA2345GTHPLUSTRG8UJN33"'
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
+
+    implementation "androidx.paging:paging-runtime:2.0.0"
+    implementation "androidx.lifecycle:lifecycle-extensions:2.1.0"
+
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.google.code.gson:gson:2.7'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
+    //  implementation 'com.squareup.okhttp3:logging-interceptor:3.10.0'
+
+
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.9'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    implementation 'com.pierfrancescosoffritti.androidyoutubeplayer:core:10.0.3'
+    // implementation 'com.google.android.exoplayer:exoplayer:2.10.4'
+    //implementation 'com.jarvanmo:exoplayerview:2.1.3'
+    implementation 'com.google.android.exoplayer:exoplayer:2.10.3'
+
+    implementation 'com.github.Shashank02051997:FancyAlertDialog-Android:0.1'
+
+    implementation 'com.github.barteksc:android-pdf-viewer:2.8.2'
+    implementation 'com.github.kk121:File-Loader:1.2'
+    implementation 'com.nabinbhandari.android:permissions:3.8' // Runtime Permission
+
+
+    implementation 'com.jsibbold:zoomage:1.3.0-SNAPSHOT'
+    implementation 'com.scottyab:rootbeer-lib:0.0.7'
+    //   implementation 'com.github.Ferfalk:SimpleSearchView:0.1.4'
+
+    // implementation 'com.github.judemanutd:katexview:1.0.1'
+
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+}

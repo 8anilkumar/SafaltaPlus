@@ -1,0 +1,80 @@
+<resources>
+    <string name="app_name">Safalta Plus</string>
+    <string name="content_type">application/json</string>
+
+
+    <string name="user_login_error">Username can not be empty</string>
+    <string name="password_login_error">Password can not be empty</string>
+    <string name="name_error">Name can not be empty</string>
+    <string name="email_error">Email can not be empty</string>
+    <string name="phone_error">Phone can not be empty</string>
+    <string name="message_error">Message can not be empty</string>
+    <string name="invalid_email">Invalid Email</string>
+    <string name="invalid_phone">Invalid Phone</string>
+    <string name="email_forget_error">Email/Mobile/LoginId can not be empty</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+    <string name="error">Error</string>
+    <string name="abort">Message</string>
+    <string name="content_unavailable">Content un-available [#003]</string>
+    <string name="network_problem">Network Error</string>
+    <string name="cancel">Cancel</string>
+    <string name="quit">Quit</string>
+    <string name="ok">Ok</string>
+    <string name="update">Update</string>
+    <string name="suceess">Success</string>
+    <string name="continues">continue</string>
+    <string name="rooted_device">Rooted device can not open the app</string>
+    <string name="no_internet">No Internet Network</string>
+    <string name="slow_internet">Your network/connection is slow, Data may take time to load</string>
+    <string name="data_not_found">Data Not Found</string>
+    <string name="rooted">Rooted</string>
+    <string name="message">Message</string>
+    <string name="connection_message">Please check your internet connection</string>
+    <string name="data_unavailable">Some data may not be available</string>
+    <string name="denied_permission">All permissions are required to continue !</string>
+    <string name="location_message">Please turn on location</string>
+    <string name="permission_denied">Permission Denied</string>
+    <string name="permission_required">Permission Required</string>
+    <string name="permission_message">You can not open the app.Because you denied the location permission</string>
+    <string name="storage_permission">You can not read pdf.Because you denied the storage permission</string>
+    <string name="message_length">Message length should be 15 characters</string>
+    <string name="warning">Warning</string>
+    <string name="invalid_data">Invalid Data</string>
+    <string name="my_courses">My Courses</string>
+    <string name="safalta_pdf_files">Safalta Plus Pdf Files</string>
+
+    <string name="dashboard">Dashboard</string>
+    <string name="course">Courses</string>
+    <string name="about_us">About Us</string>
+    <string name="centres">Centres</string>
+    <string name="support">Support</string>
+    <string name="batches">Batches</string>
+    <string name="calendar">Calendar</string>
+    <string name="lms">LMS</string>
+
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+
+    <string name="response_code_success">000</string>
+    <string name="response_code_error">001</string>
+    <string name="response_code_update">002</string>
+    <string name="response_code_abort">003</string>
+
+    <string name="title_retry">Try Again!</string>
+    <string name="search_center">Center City/Name</string>
+
+    <string-array name="feedbacktypelist">
+        <item>LMS - issue</item>
+        <item>AVA - VIDEO issue</item>
+        <item>APP - Mobile App issue</item>
+        <item>Incorrect Email/ Mobile/ Address</item>
+        <item>CENTER Feedback</item>
+        <item>FACULTY Feedback</item>
+        <item>MOBILE APP Feedback</item>
+        <item>WEBSITE Feedback</item>
+        <item>OTHERS</item>
+    </string-array>
+</resources>
